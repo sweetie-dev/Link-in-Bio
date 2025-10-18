@@ -12,117 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['"STIX Two Text"', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body {
-            box-sizing: border-box;
-
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%);
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-5px);
-        }
-
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        .bounce-animation {
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-10px);
-            }
-
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-
-        .fire-emoji {
-            animation: fireFlicker 1.5s infinite alternate;
-        }
-
-        @keyframes fireFlicker {
-            0% {
-                transform: scale(1) rotate(-2deg);
-            }
-
-            100% {
-                transform: scale(1.1) rotate(2deg);
-            }
-        }
-
-        .sparkle {
-            position: relative;
-            overflow: hidden;
-        }
-
-        @keyframes sparkleMove {
-
-            0%,
-            100% {
-                opacity: 0;
-                transform: translateY(0px);
-            }
-
-            50% {
-                opacity: 1;
-                transform: translateY(-10px);
-            }
-        }
-
-        .whatsapp-button {
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-        }
-
-        .catalog-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .instagram-button {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="h-full gradient-bg font-serif">
@@ -150,22 +42,37 @@
             <!-- Botões de ação -->
             <div class="space-y-4 mb-8">
                 <!-- WhatsApp -->
-                <a href="https://wa.me/5591981815829?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20lembranças!"
+                <a href="https://wa.me/5591981815829?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20Presentes!"
                     class="whatsapp-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
                     target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp"></i>
-                    <span class="text-lg">Fale Conosco (WhatsApp)</span>
+                    <i class="fas fa-box-open text-2xl"></i>
+                    <div class="text-center">
+                        <div class="text-lg font-bold">Ver Catálogo de Presentes</div>
+                        <div class="text-sm opacity-90">Presentes Personalizados!</div>
+                    </div>
                     <i class="fas fa-paper-plane text-xl"></i>
                 </a>
 
                 <!-- Catálogo -->
-                <a href="https://icaroslembrancas.com.br/"
+                <a href="https://wa.me/9180201109?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20Brindes!"
                     class="catalog-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
                     target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-gift text-2xl"></i>
+                    <i class="fas fa-star text-white-400 text-2xl"></i>
                     <div class="text-center">
-                        <div class="text-lg font-bold">Ver Catálogo</div>
+                        <div class="text-lg font-bold">Ver Catálogo de Brindes</div>
                         <div class="text-sm opacity-90">Lembranças para sua festa!</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xl"></i>
+                </a>
+
+                <!-- Site -->
+                <a href="https://icaroslembrancas.com.br/"
+                    class="site-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-globe text-2xl"></i>
+                    <div class="text-center">
+                        <div class="text-lg font-bold">Conheça também nosso site</div>
+                        <div class="text-sm opacity-90">Brindes e Presentes personalizados!</div>
                     </div>
                     <i class="fas fa-external-link-alt text-xl"></i>
                 </a>
@@ -199,15 +106,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center text-white/80 py-6 px-4">
-        <p class="text-sm">
-            Copyright © 2024 Ícaros Lembranças - Todos os direitos reservados ✨
+    <footer class="text-center text-gray-700 py-6 px-4 bg-white/80 border-t border-gray-200">
+        <p class="text-sm font-semibold">
+            Copyright © 2025 Ícaros Lembranças - Todos os direitos reservados 
         </p>
-        <p class="text-xs mt-2 opacity-75">
+        <p class="text-xs mt-2">
             Fazendo suas festas ainda mais especiais! 🎉
         </p>
     </footer>
-    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'99090b2b046af610',t:'MTc2MDgwMTA3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    <script src="script.js"></script>
 </body>
 
 </html>

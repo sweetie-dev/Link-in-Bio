@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.fire-emoji {
+    animation: fireFlicker 1.5s infinite alternate;
+}
+
+@keyframes fireFlicker {
+    0% {
+        transform: scale(1) rotate(-2deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(2deg);
+    }
+}
+
+.sparkle {
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes sparkleMove {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp-button {
+    background: linear-gradient(135deg, #ca02f3 0%, #6b1092 100%);
+}
+
+.catalog-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.site-button {
+    background: linear-gradient(135deg, #43e9ba 0%, #38c2f9 100%);
+}
+
+.instagram-button {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
