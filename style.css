@@ -4,7 +4,7 @@ body {
 }
 
 .gradient-bg {
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+    background: rgb(255, 255, 255);
 }
 
 .card-hover {
@@ -89,13 +89,13 @@ body {
 }
 
 .catalog-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ca02f3 0%, #6b1092 100%);
 }
 
 .site-button {
-    background: linear-gradient(135deg, #43e9ba 0%, #38c2f9 100%);
+    background: linear-gradient(135deg, #ca02f3 0%, #6b1092 100%);
 }
 
 .instagram-button {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #ca02f3 0%, #6b1092 100%);
 }
