@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ícaros Lembranças - Festa Inesquecível</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"STIX Two Text"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            box-sizing: border-box;
+
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .bounce-animation {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .fire-emoji {
+            animation: fireFlicker 1.5s infinite alternate;
+        }
+
+        @keyframes fireFlicker {
+            0% {
+                transform: scale(1) rotate(-2deg);
+            }
+
+            100% {
+                transform: scale(1.1) rotate(2deg);
+            }
+        }
+
+        .sparkle {
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes sparkleMove {
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: translateY(0px);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+        }
+
+        .whatsapp-button {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+
+        .catalog-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .instagram-button {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+    </style>
+</head>
+
+<body class="h-full gradient-bg font-serif">
+    <main class="min-h-full flex items-center justify-center p-4">
+        <div class="w-full max-w-md">
+            <!-- Header com foto e título -->
+            <header class="text-center mb-8">
+                <div class="relative mb-6">
+                    <div class="w-32 h-32 mx-auto bg-white  p-2  sparkle">
+                        <div class=" flex items-center justify-center">
+                            <img src="logo/image.png" alt="Ícaros Lembranças Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="text-2xl font-bold text-gray-800 mb-2 leading-tight tracking-tight">
+                    <span class="bg-white/90 px-4 py-2 rounded-lg shadow-lg inline-block">
+                        Festa inesquecível tem assinatura de Ícaros Lembranças!
+                    </span>
+                </h1>
+
+
+            </header>
+
+            <!-- Botões de ação -->
+            <div class="space-y-4 mb-8">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5591981815829?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20lembranças!"
+                    class="whatsapp-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    <span class="text-lg">Fale Conosco (WhatsApp)</span>
+                    <i class="fas fa-paper-plane text-xl"></i>
+                </a>
+
+                <!-- Catálogo -->
+                <a href="https://icaroslembrancas.com.br/"
+                    class="catalog-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-gift text-2xl"></i>
+                    <div class="text-center">
+                        <div class="text-lg font-bold">Ver Catálogo</div>
+                        <div class="text-sm opacity-90">Lembranças para sua festa!</div>
+                    </div>
+                    <i class="fas fa-external-link-alt text-xl"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/icaroslembrancasbelem"
+                    class="instagram-button text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram "></i>
+                    <span class="text-lg">Siga no Instagram</span>
+                    <i class="fas fa-heart text-xl pulse-animation"></i>
+                </a>
+                <a href="https://facebook.com/icaroslembrancasbelem"
+                    class="bg-blue-600 text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                    <span class="text-lg">Siga no Facebook</span>
+                    <i class="fas fa-thumbs-up text-xl pulse-animation"></i>
+                </a>
+
+                <!-- Localização -->
+                <a href="https://maps.app.goo.gl/MHZELLBEYM6akf3J7"
+                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-4 rounded-2xl font-bold card-hover flex items-center justify-between shadow-xl"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                    <span class="text-lg">Nossa Localização</span>
+                    <i class="fas fa-compass text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white/80 py-6 px-4">
+        <p class="text-sm">
+            Copyright © 2024 Ícaros Lembranças - Todos os direitos reservados ✨
+        </p>
+        <p class="text-xs mt-2 opacity-75">
+            Fazendo suas festas ainda mais especiais! 🎉
+        </p>
+    </footer>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'99090b2b046af610',t:'MTc2MDgwMTA3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
