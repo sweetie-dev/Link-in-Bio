@@ -4,7 +4,7 @@
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido durante minha experiência na empresa **Ícaros Lembranças**, com o objetivo de criar uma página simples, organizada e visualmente alinhada à identidade da empresa.
+Projeto desenvolvido durante minha experiência na Ícaros Lembranças, onde fui responsável pela criação de uma página de Link in Bio e pelo desenvolvimento e personalização do site de produtos personalizados em WordPress, incluindo organização, layout e manutenção da plataforma.
 
 A proposta era facilitar o acesso dos clientes aos principais canais da marca, reunindo links importantes em uma única página.
 
